@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "start": "snowpack dev --polyfill-node",
     "build": "snowpack build",
     "test": "jest"
   },
@@ -9,14 +9,16 @@
   },
   "devDependencies": {
     "@snowpack/app-scripts-svelte": "^1.9.1",
+    "@snowpack/plugin-babel": "^2.1.4",
     "@snowpack/plugin-dotenv": "^2.0.4",
     "@snowpack/plugin-run-script": "^2.1.7",
     "@snowpack/plugin-svelte": "^3.1.0",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/svelte": "^3.0.0",
+    "babel-preset-power-assert": "^3.0.0",
     "jest": "^26.2.2",
+    "power-assert": "^1.6.1",
     "snowpack": "^2.15.1",
-    "svelte-check": "^1.0.0",
-    "uvu": "^0.3.4"
+    "svelte-check": "^1.0.0"
   }
 }

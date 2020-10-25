@@ -5,6 +5,7 @@ module.exports = {
     test: '/test',
   },
   plugins: [
+    '@snowpack/plugin-babel',
     '@snowpack/plugin-svelte',
     '@snowpack/plugin-dotenv',
     [
@@ -13,7 +14,7 @@ module.exports = {
     ],
   ],
   install: [
-    /* ... */
+    'power-assert'
   ],
   installOptions: {
     /* ... */
